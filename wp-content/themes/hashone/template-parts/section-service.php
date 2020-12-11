@@ -58,11 +58,11 @@ if (get_theme_mod('hashone_disable_service_sec') != 'on') {
                         );
                         // <!--  -->
                     $i = 1;
-                    foreach ($services_actives as $key => $value) {
+                    // foreach ($services_actives as $key => $value) {
 
                     // }
 
-                    // for ($i = 0; $i < count($services_actives); $i++) {
+                    for ($i = 0; $i < count($services_actives); $i++) {
                         $hashone_service_page_id = get_theme_mod('hashone_service_page' . $i, $hashone_page);
                         $hashone_service_page_icon = get_theme_mod('hashone_service_page_icon' . $i, 'fa-globe');
                         
@@ -79,14 +79,14 @@ if (get_theme_mod('hashone_disable_service_sec') != 'on') {
                                         </div>
 
                                         <div class="hs-service-excerpt">
-                                            <h6><a href="<?php the_permalink(); ?>"><?php echo $key; //the_title(); ?></a></h6>
+                                            <h6><a href="<?php the_permalink(); ?>"><?php the_title();//echo $key; ?></a></h6>
                                             <?php
                                                 echo $value;
-                                            // if (has_excerpt()) {
-                                            //     echo get_the_excerpt();
-                                            // } else {
-                                            //     echo hashone_excerpt(get_the_content(), 100);
-                                            // }
+                                            if (has_excerpt()) {
+                                                echo get_the_excerpt();
+                                            } else {
+                                                echo hashone_excerpt(get_the_content(), 100);
+                                            }
                                             ?>
                                         </div>
                                     </div>
@@ -103,3 +103,8 @@ if (get_theme_mod('hashone_disable_service_sec') != 'on') {
         </div>
     </section>
 <?php } ?>
+
+
+
+
+<!-- "Se define la ruta de evacuación y el punto de encuentro según el entorno de la empresa." -->
