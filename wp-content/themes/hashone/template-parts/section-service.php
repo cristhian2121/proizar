@@ -57,12 +57,12 @@ if (get_theme_mod('hashone_disable_service_sec') != 'on') {
 
                         );
                         // <!--  -->
-                    $i = 1;
+                    // $i = 1;
                     // foreach ($services_actives as $key => $value) {
 
                     // }
 
-                    for ($i = 0; $i < count($services_actives); $i++) {
+                    for ($i = 0; $i < 7; $i++) {
                         $hashone_service_page_id = get_theme_mod('hashone_service_page' . $i, $hashone_page);
                         $hashone_service_page_icon = get_theme_mod('hashone_service_page_icon' . $i, 'fa-globe');
                         

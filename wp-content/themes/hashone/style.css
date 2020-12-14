@@ -20,6 +20,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 @import "./css/our-styles.css";
 
+/* variables */
+:root {
+    --primary_color: #1a8089;
+    --secundary_color: #121c2a;
+}
+
 html {
     font-family: sans-serif;
     -webkit-text-size-adjust: 100%;
@@ -423,7 +429,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    background: #EE3B24;
+    background: var(--primary_color);
     padding: 0 20px;
     color: #FFF;
     border: 0;
@@ -514,18 +520,18 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-    color: #EE3B24;
+    color: var(--secundary_color);
     text-decoration: none;
 }
 
 a:visited {
-    color: #EE3B24;
+    color: var(--secundary_color);
 }
 
 a:hover,
 a:focus,
 a:active {
-    color: #EE3B24;
+    color: var(--secundary_color);
 }
 
 a:focus {
@@ -702,7 +708,7 @@ a:active {
 .hs-post-info{
     float: left;
     width: 75px;
-    background: #EE3B24;
+    background: var(--primary_color);
     color: #FFF;
     text-align: center;
     font-family: 'Roboto Condensed', sans-serif;
@@ -766,7 +772,7 @@ a:active {
 }
 
 .entry-header .entry-title:first-letter{
-    color: #EE3B24;
+    color: var(--primary_color);
 }
 
 .entry-header .entry-title a{
@@ -782,7 +788,7 @@ a:active {
 }
 
 .entry-categories .fa{
-    color: #EE3B24;
+    color: var(--primary_color);
     margin-right: 5px;
 }
 
@@ -796,7 +802,7 @@ a:active {
 }
 
 .entry-readmore a{
-    background: #EE3B24;
+    background: var(--primary_color);
     color: #FFF;
     display: inline-block;
     padding: 10px 20px;
@@ -835,7 +841,7 @@ a:active {
     left: 0;
     top: 100%;
     width: 30px;
-    background: #EE3B24;
+    background: var(--primary_color);
     height: 2px;
 }
 
@@ -869,7 +875,7 @@ a:active {
 }
 
 .widget-area a:hover{
-    color: #EE3B24
+    color: #1a8089
 }
 
 .widget-area .widget{
@@ -923,7 +929,7 @@ h3.comments-title:after{
     left: 0;
     top: 100%;
     width: 30px;
-    background: #EE3B24;
+    background: var(--primary_color);
     height: 2px;
 }
 
@@ -962,7 +968,7 @@ article.comment-body {
 }
 
 .comment-list a:hover{
-    color: #EE3B24 !important;
+    color: #1a8089 !important;
 }
 
 .comment-list .comment-respond{
@@ -1018,7 +1024,7 @@ article.comment-body {
 
 .nav-previous a,
 .nav-next a{
-    background: #EE3B24;
+    background: var(--secundary_color);
     color: #FFF;
     display: inline-block;
     padding: 0 10px;
@@ -1034,7 +1040,7 @@ article.comment-body {
 .nav-next a:after{
     content: "";
     position: absolute;
-    border-left: 11px solid #EE3B24;
+    border-left: 11px solid var(--secundary_color);
     border-top: 11px solid transparent;
     border-bottom: 11px solid transparent;
     top: 0;
@@ -1048,7 +1054,7 @@ article.comment-body {
 .nav-previous a:after{
     content: "";
     position: absolute;
-    border-right: 11px solid #EE3B24;
+    border-right: 11px solid var(--secundary_color);
     border-top: 11px solid transparent;
     border-bottom: 11px solid transparent;
     top: 0;
@@ -1056,7 +1062,7 @@ article.comment-body {
 }
 
 .no-comments{
-    color: #EE3B24;
+    color: var(--secundary_color);
 }
 
 /*--------------------------------------------------------------
@@ -1164,7 +1170,7 @@ object {
     left: 0;
     right: 0;
     z-index: 99999;
-    border-top: 2px solid #EE3B24;
+    border-top: 2px solid var(--primary_color);
     padding: 0;
     height: 92px;
     transform: translateZ(0);
@@ -1262,7 +1268,7 @@ object {
 }
 
 .hs-site-title a:first-letter{
-    color: #EE3B24
+    color: #1a8089
 }
 
 .hs-site-description{
@@ -1435,7 +1441,7 @@ object {
 .home.blog .hs-main-navigation .current-menu-item:hover > a,
 .home.blog .hs-main-navigation .current_page_ancestor:hover > a,
 .home.blog .hs-white.fadeInDown .hs-main-navigation li:hover > a{
-    color: #EE3B24;
+    color: var(--secundary_color);
 }
 
 .hs-main-navigation .current_page_item > a,
@@ -1445,7 +1451,7 @@ object {
 .page-template-home-template .hs-white.fadeInDown .hs-main-navigation .current > a,
 .home.blog .hs-main-navigation .current > a,
 .home.blog .hs-white.fadeInDown .hs-main-navigation .current > a {
-    color: #EE3B24;
+    color: var(--secundary_color);
 }
 
 .hs-menu > ul > li > a:after{
@@ -1453,7 +1459,7 @@ object {
     position: absolute;
     top: 50%;
     margin-top: 12px;
-    border-bottom: 2px solid #EE3B24;
+    border-bottom: 2px solid var(--primary_color);
     left: 100%;
     right: 100%;
     transition: all 0.3s ease-in-out;
@@ -1543,7 +1549,7 @@ object {
 .pagination .nav-links a,
 .pagination .nav-links span{
     display: inline-block;
-    background: #EE3B24;
+    background: var(--primary_color);
     padding: 10px;
     color: #FFF;
     line-height: 1;
@@ -1720,7 +1726,7 @@ object {
 }
 
 .hs-progress-bar-length{
-    background: #EE3B24;
+    background: var(--primary_color);
     position: absolute;
     left: 0;
     top: 0;
@@ -1764,7 +1770,7 @@ object {
 }
 
 .hs-featured-post h3 a:hover{
-    color: #EE3B24;
+    color: var(--primary_color);
 }
 
 .hs-featured-icon{
@@ -1774,14 +1780,14 @@ object {
     position: relative;
     display: inline-block;
     color: #FFF;
-    background: #EE3B24;
+    background: var(--primary_color);
     font-size: 32px;
     line-height: 40px;
 }
 
 .hs-featured-icon:before {
     content: "";
-    border-bottom: 25px solid #EE3B24;
+    border-bottom: 25px solid var(--primary_color);
     border-left: 40px solid rgba(0, 0, 0, 0);
     border-right: 40px solid rgba(0, 0, 0, 0);
     position: absolute;
@@ -1791,7 +1797,7 @@ object {
 
 .hs-featured-icon:after {
     content: "";
-    border-top: 25px solid #EE3B24;
+    border-top: 25px solid var(--primary_color);
     border-left: 40px solid rgba(0, 0, 0, 0);
     border-right: 40px solid rgba(0, 0, 0, 0);
     position: absolute;
@@ -1822,9 +1828,9 @@ object {
 
 .hs-portfolio-cat-name:hover, 
 .hs-portfolio-cat-name.active{
-    background: #EE3B24;
+    background: var(--primary_color);
     color: #FFF;
-    border:1px solid #EE3B24;
+    border:1px solid var(--primary_color);
 }
 
 .hs-portfolio-cat-name:after, 
@@ -1834,7 +1840,7 @@ object {
     left: 50%;
     bottom: 0px;
     opacity: 0;
-    border-color: #EE3B24 transparent transparent transparent;
+    border-color: #1a8089 transparent transparent transparent;
     border-width: 8px 10px 0px 10px;
     border-style: solid;
     margin-left: -10px;
@@ -1924,7 +1930,7 @@ object {
     line-height: 36px;
     color: #FFF;
     font-size: 14px;
-    background: #EE3B24;
+    background: var(--primary_color);
     margin: 10px 5px;
     transition:all 0.5s ease-in-out;
     -moz-transition:all 0.5s ease-in-out;
@@ -1996,7 +2002,7 @@ object {
 .hs-service-icon{
     float: left;
     font-size: 46px;
-    color: #EE3B24;
+    color: var(--primary_color);
     width: 60px;
     text-align: center;
 }
@@ -2021,7 +2027,7 @@ object {
 }
 
 .hs-service-excerpt h6 a:hover {
-    color: #EE3B24;
+    color: var(--primary_color);
 }
 
 /*--------------------------------------------------------------
@@ -2055,7 +2061,7 @@ object {
 
 .hs-team-social-id a{
     display: inline-block;
-    color: #EE3B24;
+    color: var(--primary_color);
     margin: 0 10px;
     font-size: 16px;
     line-height: 1;
@@ -2104,7 +2110,7 @@ object {
 }
 
 .hs-team-member h6 a:hover{
-    color: #EE3B24;
+    color: var(--primary_color);
 }
 
 .hs-team-member h6:after{
@@ -2114,7 +2120,7 @@ object {
     left: 50%;
     margin-left: -25px;
     height: 2px;
-    background: #EE3B24;
+    background: var(--primary_color);
     bottom: -2px;
 }
 
@@ -2169,7 +2175,7 @@ object {
 .hs-counter-icon{
     display: inline-block;
     font-size: 22px;
-    color: #EE3B24;
+    color: var(--primary_color);
     position: relative;
 }
 
@@ -2179,7 +2185,7 @@ object {
     left: 100%;
     height: 2px;
     width: 50px;
-    background: #EE3B24; 
+    background: var(--primary_color); 
     top: 50%;
     margin-top: -1px;
     margin-left: 10px;
@@ -2191,7 +2197,7 @@ object {
     right: 100%;
     height: 2px;
     width: 50px;
-    background: #EE3B24; 
+    background: var(--primary_color); 
     top: 50%;
     margin-top: -1px;
     margin-right: 10px;
@@ -2230,7 +2236,7 @@ object {
     width: 100px;
     margin: 0 auto 20px;
     border-radius: 50%;
-    border: 1px solid #EE3B24;
+    border: 1px solid var(--primary_color);
     padding: 2px;
     transition:all 0.3s ease-in-out;
     -moz-transition:all 0.3s ease-in-out;
@@ -2262,7 +2268,7 @@ object {
 
 .hs-testimonial-wrap .owl-carousel .owl-dot span:hover, 
 .hs-testimonial-wrap .owl-carousel .owl-dot.active span{
-    background: #EE3B24;
+    background: var(--primary_color);
 }
 
 /*--------------------------------------------------------------
@@ -2326,16 +2332,16 @@ object {
 }
 
 .hs-blog-post:hover{
-    background: #EE3B24;
+    background: var(--primary_color);
     color: #FFF;
 }
 
 .hs-blog-post:hover .hs-blog-excerpt:after{
-    border-color:transparent #EE3B24 transparent transparent;
+    border-color:transparent #1a8089 transparent transparent;
 }
 
 .hs-right-img.hs-blog-post:hover .hs-blog-excerpt:after{
-    border-color:transparent transparent transparent #EE3B24;
+    border-color:transparent transparent transparent var(--primary_color);
 }
 
 .hs-blog-excerpt h5 a{
@@ -2447,7 +2453,7 @@ object {
     width: 30px;
     line-height: 30px;
     font-family: Arial;
-    background: #EE3B24;
+    background: var(--primary_color);
     margin-right: 8px;
     text-align: center;
 }
@@ -2483,7 +2489,7 @@ object {
 }
 
 #hs-colophon h4.widget-title::first-letter{
-    color: #EE3B24
+    color: #1a8089
 }
 
 #hs-top-footer{
@@ -2549,7 +2555,7 @@ object {
 }
 
 #hs-back-top{
-    background: #EE3B24;
+    background: var(--primary_color);
     font-family: Arial;
     position: fixed;
     right: 20px;
@@ -2709,7 +2715,7 @@ object {
 .woocommerce #respond input#submit, 
 .woocommerce a.button, .woocommerce button.button, 
 .woocommerce input.button{
-    background: #EE3B24;
+    background: var(--primary_color);
     color: #FFF;
     border-radius: 0;
     font-weight: normal;
@@ -2752,7 +2758,7 @@ object {
 .woocommerce nav.woocommerce-pagination ul li a, 
 .woocommerce nav.woocommerce-pagination ul li span{
     display: inline-block;
-    background: #EE3B24;
+    background: var(--primary_color);
     padding: 10px;
     color: #FFF;
     line-height: 1;
@@ -2770,7 +2776,7 @@ object {
 .woocommerce a.button.alt, 
 .woocommerce button.button.alt, 
 .woocommerce input.button.alt{
-    background: #EE3B24;
+    background: var(--primary_color);
     color: #FFF;
 }
 
@@ -2835,7 +2841,7 @@ object {
 .woocommerce input.button.alt:disabled:hover, 
 .woocommerce input.button.alt:disabled[disabled], 
 .woocommerce input.button.alt:disabled[disabled]:hover{
-    background: #EE3B24;
+    background: var(--primary_color);
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li{
@@ -2850,7 +2856,7 @@ object {
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li.active{
-    background: #EE3B24;
+    background: var(--primary_color);
     color: #FFF;
 }
 
@@ -2923,7 +2929,7 @@ object {
         right: 0;
         text-align: center;
         box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-        border-top: 2px solid #EE3B24;
+        border-top: 2px solid var(--primary_color);
     }
 
     .hs-main-navigation li{
@@ -2960,11 +2966,11 @@ object {
         height: 2px;
         width: 32px;
         margin: 0 auto;
-        background: #EE3B24;
+        background: var(--primary_color);
         display: block;
         top: 50%;
         margin-top: -1px;
-        box-shadow: 0 10px 0px 0px #EE3B24, 0 -10px 0px 0px #EE3B24;
+        box-shadow: 0 10px 0px 0px #1a8089, 0 -10px 0px 0px var(--primary_color);
     }
 }
 
